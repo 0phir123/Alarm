@@ -1,0 +1,14 @@
+#header1{
+    background-image: url('images/index.jpg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+#color_white{
+    color: white;
+}
+
+#color{
+    background-color: rgba(0, 255, 234, 0.582);
+ 
+}
