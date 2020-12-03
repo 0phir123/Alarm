@@ -11,12 +11,25 @@
             <div class="container vw-100 vh-100 ">
                 <h3 id ="color_white">Alarm Setup</h3>
                 <p id ="color_white" >In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+                <form action="{% url 'index' %}" method="POST">
+                    <input type="radio" id="switch" name="switch" value="OFF">
+                    <label id ="color_white" for="switch">Turn OFF</label><br>
+                    <input type="radio" id="switch" name="switch" value="ON">
+                    <label id ="color_white" for="switch">Turn ON</label><br>
+                    
+                    <label id ="color_white"for="lname">Password:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
 
+                    <input  onclick="alert('The Setup Submit')" type="submit" value="Submit">
+</form>
+
+
+                </form>   
 
 
 
                 
-                sdad    
+
                 </p>
                
             </div>
