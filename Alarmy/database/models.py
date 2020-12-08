@@ -5,8 +5,11 @@ from datetime import datetime
 
 class Database(models.Model):
    
+
     trigger = models.BooleanField(default=False)
     time = models.DateTimeField(default=datetime.now)
     
     def __str__(self):
         return str(self.time)
+    def get_trigger(self):
+        return (self.trigger)
