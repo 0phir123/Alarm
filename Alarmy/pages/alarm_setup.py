@@ -1,12 +1,13 @@
 from database.models import Database
+from pages import config
 import time
+
 def turnOnAlarm():
-        state = 'True'
-        print ("hele")
-        while(state):
-            state =  (Database.objects.all().last()).trigger
-            #print (Database.objects.all().last()[0])
-            print (state)
+        
+
+        while(config.state):
+          
+            print (config.state)
             print ("alarm on")
             time.sleep(5)
 
