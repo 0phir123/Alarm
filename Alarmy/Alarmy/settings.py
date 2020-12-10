@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'database.apps.DatabaseConfig',
     'pages.apps.PagesConfig',
     'accounts.apps.AccountsConfig',
+    'detect.apps.DetectConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

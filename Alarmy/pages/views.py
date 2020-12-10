@@ -5,6 +5,7 @@ from .alarm_setup import turnOnAlarm
 from pages import config
 from django.contrib.auth.models import User
 from django.contrib import messages, auth
+from detect.models import Detect
 # Create your views here.
 a = 0 #a == 0 if user is autenticate
 
@@ -32,3 +33,13 @@ def setup(request):
     return render(request, 'pages/setup.html')
 def index(request):
     return render(request, 'pages/index.html')
+
+def live(request):
+    return render(request, 'pages/live.html')
+
+def history(request):
+    data = Detect.objects.all()
+    context={
+        'data' : data
+    }
+    return render(request, 'pages/history.html', context)

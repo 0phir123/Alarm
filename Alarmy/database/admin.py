@@ -4,7 +4,6 @@ from django.contrib import admin
 
 from .models import Database
 
-
 class DatabaseAdmin(admin.ModelAdmin):
     list_display = ('id', 'trigger', 'time')
     list_display_links = ('id','time')
@@ -12,3 +11,5 @@ class DatabaseAdmin(admin.ModelAdmin):
     list_per_page = 25
 
 admin.site.register(Database, DatabaseAdmin)
+
+

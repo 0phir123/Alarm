@@ -28,10 +28,10 @@
               <a class="nav-link" href="{% url 'setup' %}" >Setup</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="live.html">Live 24\7</a>
+              <a class="nav-link" href="{% url 'live' %}">Live 24\7</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="history.html">History</a>
+              <a class="nav-link" href="{% url 'history' %}">History</a>
             </li>
             {%else%}
             {% endif %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block content%}
+{% load static %}
+{% include 'partials/_alerts.html' %}
+      
+        
+      <div>
+      <header>
+        <div id="header2">
+
+        
+            <div class="container vw-100 vh-100 ">
+                <h3 id ="AlertDiv">History</h3>
+                <p id= 'AlertDiv2'>
+                  List Off All the time the start and detect threat <br>
+              
+      
+                </p>
+                <table id='Table'>
+                  {% for i in data %}
+                    <tr>
+                      
+                      <td> {{ i.time }} </td>
+                    </tr>
+                  {% endfor %}
+                </table>
+
+                
+                
+
+               
+            </div>
+        </div>         
+      </header>
+      
+{% endblock%}

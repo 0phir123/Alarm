@@ -42,3 +42,12 @@
     
     color:white;
 }
+
+#Table {
+    position:absolute;
+    
+    top: 350px;
+    width: 1000px;
+    
+    color:white;
+}
