@@ -25,7 +25,7 @@ def turnOnAlarm():
 
 #Clean the Database of detects and setups
 def clean_counters(detectsC,setupsC):
-    if detectsC>20:
+    if detectsC>10:
         Detect.objects.all().delete()
     else:
         pass
