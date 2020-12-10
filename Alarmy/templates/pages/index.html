@@ -1,37 +1,23 @@
 {% extends 'base.html' %} {% block content%}
 {% load static %}
-
-      <div id="color">
-          U successfuly logged in as Ophir AC
+{% include 'partials/_alerts.html' %}
+      
+        
       <div>
       <header>
-        <div id="header1">
+        <div id="header2">
 
         
             <div class="container vw-100 vh-100 ">
-                <h3 id ="color_white">Alarm Setup</h3>
-                <p id ="color_white" >In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
-                <form action="{% url 'index' %}" method="POST">
-                    {% csrf_token %}
-                    <input type="radio" id="switch" name="switch" value="OFF">
-                    <label id ="color_white" for="switch">Turn OFF</label><br>
-                    <input type="radio" id="switch" name="switch" value="ON">
-                    <label id ="color_white" for="switch">Turn ON</label><br>
-                    
-                    <label id ="color_white"for="pass">Password:</label><br>
-                    <input type="text" id="pass" name="pass" value="Doe"><br><br>
-
-                    <input  onclick="alert('The Setup Submit')" type="submit" value="Submit">
-            
-
-
-                </form>   
-
-
+                <h3 id ="AlertDiv">Welcome To Alarmy</h3>
+                <p id= 'AlertDiv2'>
+                  Please Log in to the system <br>
+                  For Turning the alarm  ON/OFF  , <br>
+                  View History and Live 24/7
+                </p>
 
                 
 
-                </p>
                
             </div>
         </div>         

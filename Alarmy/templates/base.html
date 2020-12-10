@@ -17,28 +17,45 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="{% url 'index' %}">Alarm Setup</a>
+        <a class="navbar-brand" href="{% url 'index' %}">Alarmy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
-          
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'setup' %}" >Setup</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="live.html">Live 24\7</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'about' %}">About</a>
-            </li>    
+              <a class="nav-link" href="history.html">History</a>
+            </li>
+            {%else%}
+            {% endif %}
+            
            
           </ul>
           <ul class="navbar-nav ml-auto">
+            {% if user.is_authenticated %}
             <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
-            </li>
+              <a class="nav-link" href="{% url 'index' %}">
+                Welcome {{user.username}} 
+              </a>
+            </li
             <li class="nav-item">
-                <a class="nav-link" href="history.html">History</a>
+              <a class="nav-link" href="{% url 'logout' %}">Logout</a>
             </li>
+
+            {%else%}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'login' %}">Login</a>
+            </li>
+            
+            {% endif %}
+            
         </ul>
         </div>  
       </nav>

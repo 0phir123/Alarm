@@ -12,3 +12,33 @@
     background-color: rgba(0, 255, 234, 0.582);
  
 }
+
+#header2{
+    background-image: url('images/about1.jpg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+#AlertDiv {
+    position:absolute;
+    
+    top: 198px;
+    width: 1000px;
+    
+    color:white;
+}
+
+#AlertDiv h1{
+    margin:auto;
+    vertical-align:middle;
+}
+
+#AlertDiv2 {
+    position:absolute;
+    
+    top: 250px;
+    width: 1000px;
+    
+    color:white;
+}
