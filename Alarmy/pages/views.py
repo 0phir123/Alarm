@@ -29,7 +29,7 @@ def setup(request):
         else:
             messages.error(request, 'First Log in to the System')
             return redirect('login') 
-
+    
     return render(request, 'pages/setup.html')
 def index(request):
     return render(request, 'pages/index.html')
