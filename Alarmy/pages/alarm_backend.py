@@ -34,7 +34,6 @@ def initialConf():
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login("ophiracyber@gmail.com", "Ophir1221")
     
    
 
