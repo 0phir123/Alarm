@@ -2,14 +2,16 @@ from database.models import Database
 from detect.models import Detect
 from pages import config
 import time
-
+import alram_backend
 def turnOnAlarm():
 #Two vars of count for make the db clear after 1000 times of setups and 20 threat
         count_of_setups = 0
         count_of_detect = 0
+        main()
+        
         while(config.state):
           
-            print ("alarm on")
+            
          
             detect = Detect()
             detect.save()

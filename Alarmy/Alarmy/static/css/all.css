@@ -1,5 +1,5 @@
 #header1{
-    background-image: url('/home/djangoadmin/pyapps/Alarm_Project/Alarmy/static/css/images/index.jpg ');
+    background-image: url('images/index.jpg');
     width: 100%;
     height: auto;
     background-size: cover;
@@ -13,12 +13,7 @@
  
 }
 
-#header2{
-    background-image: url('images/about1.jpg');
-    width: 100%;
-    height: auto;
-    background-size: cover;
-}
+
 #history{
     background-image: url('images/history.jpg');
     width: 100%;
@@ -55,4 +50,19 @@
     width: 1000px;
     
     color:white;
+}
+@media (max-width: 767px) {
+    #header2{
+        background-image: url('images/about1_small.jpg');
+        background-size: auto auto ;
+        
+    }
+}
+@media (min-width: 768px) {
+    #header2{
+        background-image: url('images/about1.jpg');
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
 }
